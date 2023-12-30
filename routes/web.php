@@ -14,7 +14,7 @@ Route::get('/', function () {
     return view('proxy');
 });
 
-Route::post('/', [ProxyController::class, 'handleProxyRequest']);
+Route::post('/proxy', [ProxyController::class, 'handleProxyRequest']);
 
 
 
